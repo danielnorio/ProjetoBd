@@ -1,0 +1,52 @@
+@model ProjetoDeBancoDeDados.Models.Seguradora
+
+@{
+    ViewData["Title"] = "Remover";
+}
+
+<h2>Remover</h2>
+
+<h3>Você tem certeza que quer remover isso?</h3>
+<div>
+    <h4>Seguradora</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CNPJ)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CNPJ)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Voltar à lista</a>
+        </div>
+    </form>
+</div>

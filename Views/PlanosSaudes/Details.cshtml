@@ -1,0 +1,48 @@
+@model ProjetoDeBancoDeDados.Models.PlanoSaude
+
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>PlanoSaude</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Numero)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Numero)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Tipo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tipo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Titular)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Titular)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Validade)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Validade)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Valor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Valor)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Voltar à lista</a>
+</div>
